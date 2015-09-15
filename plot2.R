@@ -19,6 +19,7 @@ cleandata$Sub_metering_2 <- as.numeric(cleandata$Sub_metering_2)
 cleandata$Sub_metering_3 <- as.numeric(cleandata$Sub_metering_3)
 
 
-plot(cleandata$Time, cleandata$Global_active_power, type = "l", xlab = "", ylab = "Global Active Power (kilowatts)")
+plot(cleandata$Time, cleandata$Global_active_power, type = "l",
+     xlab = "", ylab = "Global Active Power (kilowatts)")
 dev.copy(png, file = "plot2.png")
 dev.off()
