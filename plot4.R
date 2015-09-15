@@ -19,7 +19,7 @@ cleandata$Sub_metering_2 <- as.numeric(cleandata$Sub_metering_2)
 cleandata$Sub_metering_3 <- as.numeric(cleandata$Sub_metering_3)
 
 
-png("plot4.png", width = 480, height = 480, type = "quartz")
+png("plot4.png", width = 480, height = 480)
 par(mfrow = c(2, 2))
 # plot (1,1)
 plot(cleandata$Time, cleandata$Global_active_power, type = "l",
@@ -37,7 +37,7 @@ points(cleandata$Time, cleandata$Sub_metering_2, type = "l",
 points(cleandata$Time, cleandata$Sub_metering_3, type = "l",
        col = "blue", xlab = "", ylab = "Energy sub metering")
 legend("topright", legend = c("Sub_metering_1","Sub_metering_2","Sub_metering_3"),
-       col = c("black","red","blue"), cex = 0.6, inset = 0.01, lty = c(1,1,1), box.lty = 0)
+       col = c("black","red","blue"), cex = 1, inset = 0.01, lty = c(1,1,1), box.lty = 0)
 
 # plot (2,2)
 plot(cleandata$Time, cleandata$Global_reactive_power, type = "l",
